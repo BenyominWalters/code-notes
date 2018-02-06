@@ -160,3 +160,29 @@ while (true) {
     }
 }
 ```
+This code uses logic to decide if the hero should pickup an item or not. Similar code could be used to charge "thrower" enemies, and wait for regular enemies to attack.
+
+```js
+// Ogres are attacking a nearby settlement!
+// Be careful, though, for the ogres have sown the ground with poison.
+// Gather coins and defeat the ogres, but avoid the burls and poison!
+
+while(true) {
+    var enemy = hero.findNearestEnemy();
+    if(enemy.type == "munchkin" || enemy.type == "thrower") {
+        hero.attack(enemy);
+    }
+    var item = hero.findNearestItem();
+    // Check the item type to make sure the hero doesn't pick up poison!
+    // Look for types: 'gem' and 'coin'
+ if(item.type == 'gem' || item.type == 'coin') {
+       if (item) {
+            // Move to the position of the item.
+            var pos = item.pos;
+            var x = pos.x;
+            var y = pos.y;
+            hero.moveXY(x, y);
+        }        
+    }
+}
+```
