@@ -12,7 +12,7 @@
 
 Setup a new project: Create a new Angular project with `ng new the-name-of-your-app` This command will create a new project folder. 
 
-Go to that folder directory with cd the-name-of-your-app 
+Go to that folder directory with `cd the-name-of-your-app` 
 
 Open your app in a browser, so that you can see what it looks like with `ng serve --open` This view should update automatically when you save changes to your code, to give you live updates.  
 
