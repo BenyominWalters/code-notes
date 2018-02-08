@@ -25,9 +25,9 @@ Your project comes pre-populated with default folders and files.
 
 ### Step 3: Create Pages (Components) 
 
-Create a new page: To automatically generate a new folder with generic HTML, CSS, and TS files for you component use this command (replace “name” with whatever you want to name your new component) `ng generate component name`  
+Create a new page: To automatically generate a new folder with generic HTML, CSS, and TS files for you component use this command (replace “name” with whatever you want to name your new component) `ionic generate pages name`. (More generally, you can generate anything you want with `ionic generate [<type>] [<name>]`, for example, you can generate a component with `ionic generate componenet name`.  
 
-Add your component to the app main HTML page (or whichever page you want this component on). You do this by adding the name of your component as an HTML element (replace the “name” in app-name with the name of your component) `<app-name></app-name>` 
+Add your pages to the app main HTML page (or whichever page you want this component on). You do this by adding the name of your pages as an HTML element (replace the “name” in app-name with the name of your component) `<ion-name></ion-name>` 
 
 Edit the HTML, CSS, and TS for your component to give it the structure, functionality and look you want. 
 
