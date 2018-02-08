@@ -20,7 +20,7 @@ If you get an error like:
 ```sh
 Error: Cannot find module '@angular-devkit/core'
 ``` 
-This means that you need to install that dependancy. Do that with `npm install @angular-devkit/core`
+This means that you need to install that dependancy. Do that with `npm install @angular-devkit/core`. (Replace "@angular-devkit/core" with whatever dependancy the Error says you are missing.
 
 Sometimes you will have to manually close the server and restart. Close the server from your terminal with [Ctrl] C then reopen with `ng serve –open` 
 
