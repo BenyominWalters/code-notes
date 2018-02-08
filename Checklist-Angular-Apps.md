@@ -14,7 +14,13 @@ Setup a new project: Create a new Angular project with `ng new the-name-of-your-
 
 Go to that folder directory with `cd the-name-of-your-app` 
 
-Open your app in a browser, so that you can see what it looks like with `ng serve --open` This view should update automatically when you save changes to your code, to give you live updates.  
+Open your app in a browser, so that you can see what it looks like with `ng serve --open` This view should update automatically when you save changes to your code, to give you live updates.
+
+If you get an error like: 
+```sh
+Error: Cannot find module '@angular-devkit/core'
+``` 
+This means that you need to install that dependancy. Do that with `npm install @angular-devkit/core`
 
 Sometimes you will have to manually close the server and restart. Close the server from your terminal with [Ctrl] C then reopen with `ng serve –open` 
 
